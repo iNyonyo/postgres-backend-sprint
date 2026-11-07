@@ -1,0 +1,10 @@
+insert into customers (first_name, last_name, gender, date_of_birth, email, phone) values ('Mady', 'Sinncock', 'Female', '2026/07/11', null, '147-682-0079');
+insert into customers (first_name, last_name, gender, date_of_birth, email, phone) values (null, 'Ingerman', 'Male', null, 'cingerman1@weather.com', '906-727-7811');
+insert into customers (first_name, last_name, gender, date_of_birth, email, phone) values ('Granger', 'Ambridge', 'Male', '2026/02/02', null, '210-977-0720');
+insert into customers (first_name, last_name, gender, date_of_birth, email, phone) values ('Dane', 'Grant', 'Male', '2026/09/05', 'dgrant3@sitemeter.com', null);
+insert into customers (first_name, last_name, gender, date_of_birth, email, phone) values ('Gail', 'Hinrichsen', 'Male', '2026/05/19', 'ghinrichsen4@ocn.ne.jp', '142-234-1811');
+insert into customers (first_name, last_name, gender, date_of_birth, email, phone) values ('Suki', 'Bruna', 'Female', '2026/08/04', 'sbruna5@wordpress.com', '848-114-7099');
+insert into customers (first_name, last_name, gender, date_of_birth, email, phone) values ('Sonya', 'Tonepohl', null, '2026/08/19', 'stonepohl6@patch.com', '880-281-7940');
+insert into customers (first_name, last_name, gender, date_of_birth, email, phone) values ('Daveen', null, 'Female', null, 'dcanas7@amazonaws.com', '357-762-5881');
+insert into customers (first_name, last_name, gender, date_of_birth, email, phone) values ('Tynan', 'O''Fielly', 'Male', null, 'tofielly8@w3.org', '209-304-7720');
+insert into customers (first_name, last_name, gender, date_of_birth, email, phone) values ('Ulrike', 'Shemmin', 'Female', null, 'ushemmin9@biblegateway.com', '897-408-3378');
