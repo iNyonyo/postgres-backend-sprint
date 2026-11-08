@@ -15,4 +15,7 @@ How to write the query for top 5 products and average order value. Had trouble d
 
 #### **DAY 3** 
 ## **LESSONS**
+Got to learn primary keys, unique and check constraints, DELETE, UPDATE, ON CONFLICT (upsert), foreign keys, INNER and LEFT JOINs, and exporting results to CSV and the challenges that come when you use UNIQUE(email, phone) to make both unique at once especially when you want to upsert.
+
 ## **CHALLENGES**
+Had a challenge with upsert because I made two fields unique at once which the check difficult so i had to drop it and create them separately. Had a challenge understanding how to use the JOIN and LEFT JOIN. I would need to practice them again. 
