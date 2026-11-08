@@ -28,16 +28,16 @@ postgres-backend-sprint/
 
 #### **DATABASE DESIGN**
 ### **TABLES**
-1. Customers
+1. Customers: 
 Stores customer information and contains customer names, gender, date of birth, email, phone number
 
-2. Products
+2. Products: 
 Stores product information
 
-3. Orders
+3. Orders: 
 Stores customer order information
 
-4. Order items
+4. Order items: 
 Stores items ordered not overall order information
 
 #### **SETUP AND INSTALLATION**
