@@ -6,8 +6,8 @@ CREATE TABLE customers (
     last_name VARCHAR(50) NOT NULL,
     gender VARCHAR(7) NOT NULL,
     date_of_birth DATE NOT NULL,
-    email VARCHAR(150),
-    phone VARCHAR(50)
+    email VARCHAR(150) UNIQUE,
+    phone VARCHAR(50) UNIQUE
 );
 
 CREATE TABLE products (
@@ -15,7 +15,7 @@ CREATE TABLE products (
     name VARCHAR(255) NOT NULL,
     brand VARCHAR(50),
     description TEXT,
-    price DECIMAL(10,2) NOT NULL,
+    price DECIMAL(10,2) NOT NULL CHECK (price > 0),
     quantity INT NOT NULL
 );
 
@@ -26,6 +26,14 @@ CREATE TABLE order_items (
     quantity INT NOT NULL,
     unit_price DECIMAL(10,2) NOT NULL,
     total_price DECIMAL(10,2) NOT NULL
+
+    CONSTRAINT fk_product
+        FOREIGN KEY (product_id)
+        REFERENCES products(id),
+    
+    CONSTRAINT fk_orders
+        FOREIGN KEY (order_id)
+        REFERENCES orders(id)
 );
 
 CREATE TABLE orders (
@@ -35,4 +43,7 @@ CREATE TABLE orders (
     status VARCHAR(50) NOT NULL,
     total_amount DECIMAL(10,2) NOT NULL,
     address VARCHAR(50) NOT NULL
+
+    FOREIGN KEY (customer_id)
+    REFERENCES customers(id)
 );
