@@ -8,7 +8,10 @@ I could not understand return with a negative quantity at first, how to use the 
 
 #### **DAY 2** 
 ## **LESSONS**
+Got to learn GROUP BY, HAVING, MIN/MAX/AVG/SUM, arithmetic and ROUND, aliases, COALESCE, NULLIF, and the timestamps and dates sections (intervals, EXTRACT, AGE), how to stop duplictaes when you run the schema and seed file again and also aggregate functions cannot be nested like in Javascript when calling it.
+
 ## **CHALLENGES**
+How to write the query for top 5 products and average order value. Had trouble deciding whether NULLIF was necessary since I was using AVG function. Also had trouble understanding the COALESCE AND NULLIF. Will need to revesit it.
 
 #### **DAY 3** 
 ## **LESSONS**
