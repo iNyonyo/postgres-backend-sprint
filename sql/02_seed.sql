@@ -10,9 +10,9 @@ INSERT INTO customers (first_name, last_name, gender, date_of_birth, email, phon
 ('Sophia',   'Miller',    'Female', '1993-12-25', 'sophia.m@email.com',         '+1-555-0107'),
 ('James',    'Davis',     'Male',   '1987-06-08', 'james.davis@email.com',      '+1-555-0108'),
 ('Isabella', 'Rodriguez', 'Female', '1996-02-14', 'isabella.r@email.com',       '+1-555-0109'),
-('Benjamin', 'Martinez',  'Male',   '1991-10-03', 'ben.martinez@email.com',     '+1-555-0110'),
+('Benjamin', 'Martinez',  'Male',   '1991-10-03', 'ben.martinez@email.com',     '+1-555-0110');
 -- Deliberate duplicate customer
-('Emma',     'Johnson',   'Female', '1992-03-14', 'emma.johnson@imail.com',     '+1-555-0111');
+INSERT INTO customers (first_name, last_name, gender, date_of_birth, email, phone) VALUES ('Emma',     'Johnson',   'Female', '1992-03-14', 'emma.johnson@email.com',     '+1-555-0111') ON CONFLICT (email) DO UPDATE SET email = EXCLUDED.email, phone = EXCLUDED.phone; 
 
 INSERT INTO products (name, brand, description, price, quantity) VALUES
 ('MacBook Pro 14"',          'Apple',     'M3 Pro, 18GB RAM, 512GB SSD',                 1999.00,  25),
@@ -63,3 +63,16 @@ INSERT INTO orders (customer_id, order_date, status, total_amount, address) VALU
 (8,  '2026-11-07 15:15:00+00', 'delivered',   149.00, '258 Spruce Ct, Westwood'),
 -- One return order 
 (9,  '2026-11-07 17:00:00+00', 'returned',   -349.00, '369 Aspen Dr, Northgate');
+
+INSERT INTO order_items
+    (product_id, order_id, quantity, unit_price, total_price)
+VALUES
+    (1, 1, 2, 150.00, 300.00),
+    (2, 1, 1,  75.00,  75.00),
+    (3, 2, 1, 500.00, 500.00),
+    (4, 2, 2,  40.00,  80.00),
+    (5, 3, 1, 250.00, 250.00),
+    (1, 4, 1, 150.00, 150.00),
+    (6, 4, 2,  90.00, 180.00),
+    (7, 5, 1, 350.00, 350.00),
+    (2, 6, 3,  75.00, 225.00);
