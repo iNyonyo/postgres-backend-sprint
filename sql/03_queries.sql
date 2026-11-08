@@ -12,3 +12,6 @@ SELECT ROUND(AVG(total_amount), 2) AS average_order_value FROM orders WHERE stat
 
 -- Share of revenue from returns
 SELECT SUM(ABS(total_amount)) AS returns_revenue FROM orders WHERE total_amount < 0;
+
+--handling missing values
+SELECT COALESCE(email, 'Email not provided') FROM customers;
