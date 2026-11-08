@@ -14,3 +14,19 @@ INSERT INTO customers (first_name, last_name, gender, date_of_birth, email, phon
 -- Deliberate duplicate customer
 ('Emma',     'Johnson',   'Female', '1992-03-14', 'emma.johnson@email.com',     '+1-555-0101');
 
+INSERT INTO products (name, brand, description, price, quantity) VALUES
+('MacBook Pro 14"',          'Apple',     'M3 Pro, 18GB RAM, 512GB SSD',                 1999.00,  25),
+('Dell XPS 13 Laptop',       'Dell',      'Intel i7, 16GB RAM, 512GB SSD',               1299.00,  40),
+('HP Spectre x360 Laptop',   'HP',        '2-in-1 convertible, OLED display',            1449.00,  18),
+('Lenovo ThinkPad X1',       'Lenovo',    'Business ultrabook, 32GB RAM',                1599.00,  22),
+('ASUS ROG Zephyrus G14',    'ASUS',      'Gaming laptop, RTX 4060',                     1499.00,  15),
+('iPhone 15 Pro',            'Apple',     '256GB, Titanium, A17 Pro',                     999.00,  80),
+('Samsung Galaxy S24 Ultra', 'Samsung',   '512GB, S Pen included',                       1199.00,  55),
+('Sony WH-1000XM5 Headphones','Sony',     'Noise cancelling over-ear',                    349.00, 120),
+('AirPods Pro 2',            'Apple',     'USB-C, Active Noise Cancellation',             249.00, 200),
+('Logitech MX Master 3S',    'Logitech',  'Wireless ergonomic mouse',                      99.00, 150),
+('Samsung 27" Odyssey G7',   'Samsung',   '1440p 240Hz gaming monitor',                   599.00,  35),
+('Kindle Paperwhite',        'Amazon',    '16GB, waterproof e-reader',                    149.00,  90),
+('Nintendo Switch OLED',     'Nintendo',  'White Joy-Con, 64GB',                          349.00,  60),
+('Bose QuietComfort Ultra',  'Bose',      'Premium noise cancelling headphones',          429.00,  45),
+('Anker PowerCore 20000',    'Anker',     'Portable power bank 20,000mAh',                 49.99, 300);
