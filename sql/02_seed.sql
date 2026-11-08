@@ -12,7 +12,7 @@ INSERT INTO customers (first_name, last_name, gender, date_of_birth, email, phon
 ('Isabella', 'Rodriguez', 'Female', '1996-02-14', 'isabella.r@email.com',       '+1-555-0109'),
 ('Benjamin', 'Martinez',  'Male',   '1991-10-03', 'ben.martinez@email.com',     '+1-555-0110'),
 -- Deliberate duplicate customer
-('Emma',     'Johnson',   'Female', '1992-03-14', 'emma.johnson@email.com',     '+1-555-0101');
+('Emma',     'Johnson',   'Female', '1992-03-14', 'emma.johnson@imail.com',     '+1-555-0111');
 
 INSERT INTO products (name, brand, description, price, quantity) VALUES
 ('MacBook Pro 14"',          'Apple',     'M3 Pro, 18GB RAM, 512GB SSD',                 1999.00,  25),
