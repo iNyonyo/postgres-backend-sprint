@@ -23,9 +23,9 @@ CREATE TABLE orders (
     id BIGSERIAL NOT NULL PRIMARY KEY,
     customer_id BIGINT NOT NULL,
     order_date TIMESTAMPTZ NOT NULL,
-    status VARCHAR(50) NOT NULL,
+    status VARCHAR(50) NOT NULL CHECK(status IN ('processing', 'shipped', 'delivered', 'cancelled'),
     total_amount DECIMAL(10,2) NOT NULL,
-    address VARCHAR(50) NOT NULL,
+    address VARCHAR(255) NOT NULL,
 
     FOREIGN KEY (customer_id)
     REFERENCES customers(id)
@@ -36,7 +36,7 @@ CREATE TABLE order_items (
     id BIGSERIAL NOT NULL PRIMARY KEY,
     product_id BIGINT NOT NULL,
     order_id BIGINT NOT NULL,
-    quantity INT NOT NULL CHECK (quantity > 0),
+    quantity INT NOT NULL,
     unit_price DECIMAL(10,2) NOT NULL CHECK (unit_price > 0),
     total_price DECIMAL(10,2) NOT NULL CHECK (total_price = quantity * unit_price),
 

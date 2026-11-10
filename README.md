@@ -47,3 +47,12 @@ Stores items ordered not overall order information
 4. Run 01_schema.sql in pshell to create tables
 5. Run 02_seed.sql in pshell to insert data
 6. Run 03_queries.sql in pshell to run queries
+
+#### **DAY 1**
+Practiced creating databases and tables, inserting data, SELECT, ORDER BY, DISTINCT, WHERE with AND/OR, comparison operators, LIMIT/OFFSET, IN, BETWEEN and LIKE/ILIKE.
+
+#### **DAY 2**
+Practiced GROUP BY, HAVING, MIN/MAX/AVG/SUM, arithmetic and ROUND, aliases, COALESCE, NULLIF, and the timestamps and dates sections (intervals, EXTRACT, AGE).
+
+#### **DAY 3**
+Practiced primary keys, unique and check constraints, DELETE, UPDATE, ON CONFLICT (upsert), foreign keys, INNER and LEFT JOINs, and exporting results to CSV.
